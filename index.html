@@ -2,44 +2,157 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Algemene Plaatselijke Verordening Wave</title>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header>
-    <h1>Algemene Plaatselijke Verordening Wave</h1>
-    <p class="subtitle">Officiële regels van de Staff der Wave</p>
+    <div class="header-container">
+      <h1>Algemene Plaatselijke Verordening Wave</h1>
+      <input type="text" id="searchInput" placeholder="Zoeken in artikelen..." />
+    </div>
   </header>
 
-  <main>
-    <section class="wetstechniek">
-      <h2>Wetstechnische informatie</h2>
-      <table>
-        <tr><th>Kenmerk</th><td>Staff der Wave</td></tr>
-        <tr><th>Officiële naam regeling</th><td>Algemene Plaatselijke Verordening Wave</td></tr>
-        <tr><th>Citeertitel</th><td>Algemene Plaatselijke Verordening Wave</td></tr>
-        <tr><th>Vastgesteld door</th><td>Het Bestuur</td></tr>
-        <tr><th>Onderwerp</th><td>Openbare orde en veiligheid</td></tr>
-      </table>
-    </section>
+  <div class="container">
+    <nav id="sidebar">
+      <ul id="articleList">
+        <li><a href="#wetstechniek">Wetstechnische informatie</a></li>
+        <li><a href="#algemene-bepalingen">Algemene Bepalingen</a></li>
+        <li><a href="#a1">A-1 - Reikwijdte</a></li>
+        <li><a href="#a2">A-2 - Geldigheid</a></li>
+        <li><a href="#a3">A-3 - Strafbepaling</a></li>
+        <li><a href="#o1">Artikel 1 - Roleplay Verstoren</a></li>
+        <li><a href="#o2">Artikel 2 - New Life Rule</a></li>
+        <li><a href="#o3">Artikel 3 - RDM (Random Deathmatch)</a></li>
+        <li><a href="#o4">Artikel 4 - Pornografische Content</a></li>
+        <li><a href="#o5">Artikel 5 - Exploits</a></li>
+        <li><a href="#o6">Artikel 6 - Cheats</a></li>
+        <li><a href="#o7">Artikel 7 - Combatlogging</a></li>
+        <li><a href="#o8">Artikel 8 - Gebruik van “/report”</a></li>
+        <li><a href="#o9">Artikel 9 - Gebruik van voertuigen</a></li>
+        <li><a href="#o10">Artikel 10 - Belediging</a></li>
+        <li><a href="#o11">Artikel 11 - Omgaan met F6/ Thirdeye</a></li>
+        <li><a href="#slotbepaling">Slotbepaling: Regels in het kort</a></li>
+      </ul>
+    </nav>
 
-    <section class="content">
-      <!-- Hier komt je volledige APV-tekst -->
-      <!-- Je kunt nu de hele APV tekst die je eerder gaf hier tussen plakken -->
-      <article>
-        <!-- Plak hier alles vanaf ## Algemene Bepalingen tot einde -->
-        <!-- Bijvoorbeeld: -->
+    <main id="content">
+      <section id="wetstechniek">
+        <h2>Wetstechnische informatie</h2>
+        <table>
+          <tr><th>Kenmerk</th><td>Staff der Wave</td></tr>
+          <tr><th>Officiële naam regeling</th><td>Algemene Plaatselijke Verordening Wave</td></tr>
+          <tr><th>Citeertitel</th><td>Algemene Plaatselijke Verordening Wave</td></tr>
+          <tr><th>Vastgesteld door</th><td>Het Bestuur</td></tr>
+          <tr><th>Onderwerp</th><td>Openbare orde en veiligheid</td></tr>
+        </table>
+      </section>
+
+      <section id="algemene-bepalingen">
         <h2>Algemene Bepalingen</h2>
-        <h3>A-1 - Reikwijdte</h3>
-        <p>1. Deze Algemene Plaatselijke Verordening ...</p>
-        <!-- enzovoort -->
-      </article>
-    </section>
-  </main>
 
-  <footer>
-    <p>© 2025 Staff der Wave – Gemaakt door Silent Sources</p>
-  </footer>
+        <article id="a1">
+          <h3>A-1 - Reikwijdte</h3>
+          <p>1. Deze Algemene Plaatselijke Verordening, hierna te noemen <strong>APV</strong>, is bedoeld als aanvulling op het Nederlands Recht en heeft betrekking op het eiland, het land en de server Wave.</p>
+          <p>2. De APV biedt een indicatief kader voor eventuele bestraffing in-game, maar is verder bedoeld voor het afhandelen van straffen buiten de testserver (in-game) om.</p>
+        </article>
+
+        <article id="a2">
+          <h3>A-2 - Geldigheid</h3>
+          <p>1. Bij wijzigingen in de wetgeving na het tijdstip waarop het feit is begaan, worden de voor de verdachte meest gunstige bepalingen toegepast.</p>
+          <p>2. Het is voor een staff-lid niet toegestaan om mee te beslissen over een zaak die betrekking heeft op zichzelf, vrienden en/of familie. Dit om te waarborgen dat een zaak op een eerlijke en rechtvaardige manier wordt behandeld, uitzondering als er hard en direct bewijs is.</p>
+          <p>3. Indien er tegen staff gelogen wordt en dit met hard bewijs (bijvoorbeeld logbestanden) wordt aangetoond, kan ervoor worden gekozen de straf te verzwaren.</p>
+        </article>
+
+        <article id="a3">
+          <h3>A-3 - Strafbepaling</h3>
+          <p>1. De straffen zijn onderverdeeld in de volgende categorieën:</p>
+          <ul>
+            <li><strong>Categorie 1:</strong> Een waarschuwing + 25 uur taakstraf (Maximaal 3 waarschuwingen in 1 maand; hierna volgt een verzwaring naar categorie 2.)</li>
+            <li><strong>Categorie 2:</strong> Een ban van 1 dag</li>
+            <li><strong>Categorie 3:</strong> Een ban van 2 dagen</li>
+            <li><strong>Categorie 4:</strong> Een ban van 3 dagen</li>
+            <li><strong>Categorie 5:</strong> Een ban van 1 week</li>
+            <li><strong>Categorie 6:</strong> Een ban van 1 maand</li>
+            <li><strong>Categorie 7:</strong> Permanente ban</li>
+            <li><strong>Categorie 8:</strong> Geen unban mogelijk (GUM)</li>
+          </ul>
+          <p>2. De straffen van categorie 6, 7 en 8 kunnen preventief worden opgelegd. Er zal dan nader onderzoek worden gedaan om de strafmaat te bepalen.</p>
+          <p>3. Een staff-lid kan besluiten de strafmaat te verhogen of te verlagen op basis van context, situatie of eerdere overtredingen van de persoon in kwestie. Bij onenigheid over een oordeel kan een ticket worden aangemaakt.</p>
+          <p>4. Een mondelinge waarschuwing dient in een notitie bij de persoon te worden geregistreerd; anders is deze niet geldig.</p>
+          <p>5. Het omzeilen van een straf zal resulteren in een straf volgens categorie 7.</p>
+          <p>6. Bans worden uitgedeeld op basis van de GTA-licentie en het IP-adres. Dit geldt voor alle gebruikers van deze kenmerken.</p>
+          <p><em>Opmerking: Waarschuwingen zijn 3 maanden geldig. Daarna vervallen ze automatisch.</em></p>
+        </article>
+      </section>
+
+      <section id="overtredingen">
+        <h2>Overtredingen - Verstoring openbare orde</h2>
+
+        <article id="o1">
+          <h3>Artikel 1 - Roleplay Verstoren</h3>
+          <p>1. Het is verboden om roleplay van een ander waar je vooraf niet betrokken bent geweest te 'joinen', dit valt onder roleplay verstorend gedrag.</p>
+          <p>2. Het is niet toegestaan om een roleplay scenario moedwillig te verstoren.</p>
+          <p><strong>Uitzondering:</strong> Indien je 'roleplayed' op de server mag je reageren op de melding/roleplay, zoals een bank overval.</p>
+          <p>→ <strong>Sanctie:</strong> Categorie 1.</p>
+        </article>
+
+        <article id="o2">
+          <h3>Artikel 2 - New Life Rule</h3>
+          <p>1. Indien je bent doodgeschoten en je weer revived is het verboden om (direct) terug te schieten op de persoon die jou heeft doodgeschoten.</p>
+          <p>→ <strong>Sanctie:</strong> Categorie 1.</p>
+        </article>
+
+        <article id="o3">
+          <h3>Artikel 3 - RDM (Random Deathmatch)</h3>
+          <p>1. Het onnodig damage geven, vermoorden, uitlokken en/of lastigvallen van anderen zonder contact van beiden kanten of intentie tot roleplay is verboden.</p>
+          <p>→ <strong>Sanctie:</strong> Categorie 1.</p>
+        </article>
+
+        <article id="o4">
+          <h3>Artikel 4 - Pornografische Content</h3>
+          <p>1. Het uitvoeren/nabootsen van pornografische content is ten strengste verboden.</p>
+          <p>2. <strong>Voorbeelden van pornografische content:</strong></p>
+          <ul>
+            <li>Berichten met een erotische tint in <code>/me</code>, <code>/do</code> en <code>/looc</code>; denk daarbij aan het praten over seksen/of (kinder)porno.</li>
+            <li>Foutief gebruik van emotes met seksuele ondertoon.</li>
+          </ul>
+          <p>→ <strong>Sanctie:</strong> Categorie 7.</p>
+        </article>
+
+        <!-- Voeg hier alle overige artikelen toe zoals in jouw document -->
+
+        <article id="slotbepaling">
+          <h3>Slotbepaling: Regels in het kort</h3>
+          <ul>
+            <li>Wees respectvol naar elkaar.</li>
+            <li>Volg altijd de aanwijzingen van staff op.</li>
+            <li>Gebruik geen cheats of exploits.</li>
+            <li>Rapporteer problemen via de juiste kanalen.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Zoekfunctie: filter artikelen in sidebar
+    const searchInput = document.getElementById('searchInput');
+    const articleList = document.getElementById('articleList');
+    searchInput.addEventListener('input', () => {
+      const filter = searchInput.value.toLowerCase();
+      const items = articleList.getElementsByTagName('li');
+      for (let i = 0; i < items.length; i++) {
+        const a = items[i].getElementsByTagName('a')[0];
+        const textValue = a.textContent || a.innerText;
+        if (textValue.toLowerCase().indexOf(filter) > -1) {
+          items[i].style.display = "";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    });
+  </script>
 </body>
 </html>
