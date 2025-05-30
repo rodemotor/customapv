@@ -1,0 +1,63 @@
+/* Algemene layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #dddddd;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+h1, h2, h3 {
+  color: #003366;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+table th, table td {
+  padding: 0.6rem;
+  border: 1px solid #cccccc;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+article {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+article h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
