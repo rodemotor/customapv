@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Algemene Plaatselijke Verordening Wave</title>
+  <title>APV Wave - Wetboek Tedeapolis stijl</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header>
-    <div class="header-container">
+    <div class="header-inner">
       <h1>Algemene Plaatselijke Verordening Wave</h1>
-      <input type="text" id="searchInput" placeholder="Zoeken in artikelen..." />
+      <input type="text" id="search" placeholder="Zoeken..." />
     </div>
   </header>
 
-  <div class="container">
+  <div class="wrapper">
     <nav id="sidebar">
-      <ul id="articleList">
+      <ul id="menu">
         <li><a href="#wetstechniek">Wetstechnische informatie</a></li>
         <li><a href="#algemene-bepalingen">Algemene Bepalingen</a></li>
         <li><a href="#a1">A-1 - Reikwijdte</a></li>
@@ -121,7 +121,7 @@
           <p>→ <strong>Sanctie:</strong> Categorie 7.</p>
         </article>
 
-        <!-- Voeg hier alle overige artikelen toe zoals in jouw document -->
+        <!-- Voeg hier je overige artikelen toe -->
 
         <article id="slotbepaling">
           <h3>Slotbepaling: Regels in het kort</h3>
@@ -137,21 +137,15 @@
   </div>
 
   <script>
-    // Zoekfunctie: filter artikelen in sidebar
-    const searchInput = document.getElementById('searchInput');
-    const articleList = document.getElementById('articleList');
+    const searchInput = document.getElementById('search');
+    const menuItems = document.querySelectorAll('#menu li');
+
     searchInput.addEventListener('input', () => {
       const filter = searchInput.value.toLowerCase();
-      const items = articleList.getElementsByTagName('li');
-      for (let i = 0; i < items.length; i++) {
-        const a = items[i].getElementsByTagName('a')[0];
-        const textValue = a.textContent || a.innerText;
-        if (textValue.toLowerCase().indexOf(filter) > -1) {
-          items[i].style.display = "";
-        } else {
-          items[i].style.display = "none";
-        }
-      }
+      menuItems.forEach(li => {
+        const text = li.textContent.toLowerCase();
+        li.style.display = text.includes(filter) ? '' : 'none';
+      });
     });
   </script>
 </body>
